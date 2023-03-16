@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   end
 
   numberSrv=2
-  # slave server
+  # Worker server
   (1..numberSrv).each do |i|
     config.vm.define "knode#{i}" do |knode|
       knode.vm.box = "debian/stretch64"
